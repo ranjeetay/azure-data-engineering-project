@@ -1,0 +1,19 @@
+{
+  "name": "SalesDataIngestion",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopySalesData",
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource"
+          },
+          "sink": {
+            "type": "ParquetSink"
+          }
+        }
+      }
+    ]
+  }
+}
